@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Details - Jobify</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-white py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3 text-primary" href="index.html">
+                Jobify
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="jobs.html">Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex gap-2" id="authLinks">
+                    <a href="login.html" class="btn btn-outline-primary px-4">Login</a>
+                    <a href="register.html" class="btn btn-primary px-4">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="job-details-section">
+        <div class="container">
+
+            <a href="jobs.html" class="back-link">
+                <i class="bi bi-arrow-left"></i> Back to Jobs
+            </a>
+
+            <div class="job-details-card">
+
+                <div class="job-details-header">
+                    <div>
+                        <h1 id="jobTitle">Frontend Developer</h1>
+                        <p id="jobCompany">Tech Solutions</p>
+                    </div>
+
+                    <a href="login.html" class="btn btn-primary px-4">
+                        Apply Now
+                    </a>
+                </div>
+
+                <div class="job-details-info">
+                    <span>
+                        <i class="bi bi-geo-alt"></i>
+                        <span id="jobLocation">Cairo</span>
+                    </span>
+
+                    <span>
+                        <i class="bi bi-clock"></i>
+                        <span id="jobType">Full Time</span>
+                    </span>
+
+                    <span>
+                        <i class="bi bi-cash"></i>
+                        <span id="jobSalary">$800 - $1200</span>
+                    </span>
+                </div>
+
+                <hr>
+
+                <div class="job-description">
+                    <h3>Job Description</h3>
+                    <p>
+                        We are looking for a motivated professional to join our team.
+                        You will work with our team to build and improve digital products
+                        and contribute to real projects.
+                    </p>
+
+                    <h3>Requirements</h3>
+                    <ul>
+                        <li>Good communication skills</li>
+                        <li>Basic knowledge of the required technologies</li>
+                        <li>Ability to work with a team</li>
+                        <li>Problem-solving skills</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
