@@ -29,8 +29,8 @@ and register or sign in to manage a profile.
 No install and no build. Clone the repo and open `index.html` in a browser:
 
 ```bash
-git clone https://github.com/<user>/jobify.git
-cd jobify
+git clone https://github.com/rovana-khaled/jobify-itc-final.git
+cd jobify-itc-final
 ```
 
 To serve it over HTTP instead of `file://`:
