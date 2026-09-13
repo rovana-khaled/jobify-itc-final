@@ -283,3 +283,12 @@ if (authLinks && isLoggedIn === "true") {
         window.location.href = "index.html";
     });
 }
+
+const applyButton = document.getElementById("applyButton");
+
+if (applyButton && isLoggedIn === "true") {
+    applyButton.addEventListener("click", event => {
+        event.preventDefault();
+        alert("Apply done");
+    });
+}
