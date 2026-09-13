@@ -284,11 +284,30 @@ if (authLinks && isLoggedIn === "true") {
     });
 }
 
-const applyButton = document.getElementById("applyButton");
+function showSuccessToast(message) {
+    const toast = document.createElement("div");
+    toast.className = "toast-success";
+    toast.innerHTML = `
+        <i class="bi bi-check-circle-fill"></i>
+        <div>
+            <strong>Success</strong>
+            <span>${message}</span>
+        </div>
+    `;
 
+    document.body.appendChild(toast);
+    requestAnimationFrame(() => toast.classList.add("show"));
+
+    setTimeout(() => {
+        toast.classList.remove("show");
+        setTimeout(() => toast.remove(), 250);
+    }, 3500);
+}
+
+const applyButton = document.getElementById("applyButton");
 if (applyButton && isLoggedIn === "true") {
     applyButton.addEventListener("click", event => {
         event.preventDefault();
-        alert("Apply done");
+        showSuccessToast("Application submitted successfully");
     });
 }
