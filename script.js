@@ -56,13 +56,13 @@ const categoryFilter = document.getElementById("categoryFilter");
 const typeFilter = document.getElementById("typeFilter");
 const searchButton = document.getElementById("searchButton");
 
-function displayJobs(jobsToDisplay) {
-    if (!jobsContainer) return;
+function displayJobs(jobsToDisplay, container = jobsContainer) {
+    if (!container) return;
 
-    jobsContainer.innerHTML = "";
+    container.innerHTML = "";
 
     jobsToDisplay.forEach(job => {
-        jobsContainer.innerHTML += `
+        container.innerHTML += `
             <div class="col-lg-4 col-md-6">
                 <div class="job-card">
                     <h5>${job.title}</h5>
@@ -124,6 +124,12 @@ function filterJobs() {
 
 if (jobsContainer) {
     displayJobs(jobs);
+}
+
+const featuredJobs = document.getElementById("featuredJobs");
+
+if (featuredJobs) {
+    displayJobs(jobs.slice(0, 3), featuredJobs);
 }
 
 if (searchButton) {
